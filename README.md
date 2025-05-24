@@ -1,13 +1,16 @@
-# MySQL Docker Setup
+# 🐳 Treinando MySQL em um Container Docker! 
 
-Este repositório contém a configuração do Docker para um banco de dados MySQL com o tema "Parks and Recreation".
+> 🎯 Ambiente prático para aprender e praticar MySQL usando Docker, com um banco de dados temático de "Parks and Recreation"! 
 
-## Pré-requisitos
+[![MySQL Version](https://img.shields.io/badge/MySQL-latest-blue?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
+[![Docker](https://img.shields.io/badge/Docker-required-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
 
-- Docker instalado
-- Docker Compose instalado
+## ⚡ Pré-requisitos
 
-## Como iniciar o container
+- 🐳 Docker instalado em sua máquina
+- 🛠️ Docker Compose instalado
+
+## 🚀 Como iniciar o container
 
 1. Abra um terminal na pasta do projeto e execute:
 
@@ -15,10 +18,10 @@ Este repositório contém a configuração do Docker para um banco de dados MySQ
 docker-compose up -d
 ```
 
-O comando acima irá:
-- Criar e iniciar o container MySQL
-- Configurar o banco de dados "Parks_and_Recreation"
-- Executar os scripts SQL iniciais da pasta `sql-scripts`
+✨ O comando acima irá:
+- 🔥 Criar e iniciar o container MySQL
+- 🗃️ Configurar o banco de dados "Parks_and_Recreation"
+- 📜 Executar os scripts SQL iniciais da pasta `sql-scripts`
 
 ## Informações de Conexão
 
@@ -56,16 +59,16 @@ Para parar o container, execute:
 docker-compose down
 ```
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-```
+```tree
 .
 ├── docker-compose.yml    # Configuração do Docker
 ├── mysql_data/          # Dados persistentes do MySQL
 └── sql-scripts/         # Scripts SQL de inicialização
 ```
 
-## Observações
+## 📝 Observações
 
-- Os dados do banco são persistidos na pasta `mysql_data`
-- Os scripts SQL na pasta `sql-scripts` são executados automaticamente na primeira inicialização do container
+- 💾 Os dados do banco são persistidos na pasta `mysql_data`
+- 🔄 Os scripts SQL na pasta `sql-scripts` são executados automaticamente na primeira inicialização do container
