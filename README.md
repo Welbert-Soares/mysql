@@ -65,8 +65,19 @@ docker-compose down
 .
 ├── docker-compose.yml    # Configuração do Docker
 ├── mysql_data/          # Dados persistentes do MySQL
-└── sql-scripts/         # Scripts SQL de inicialização
+├── sql-scripts/         # Scripts SQL de inicialização
+└── commands/           # Comandos e scripts do projeto
+    └── scripts-sql/    # Scripts SQL de desenvolvimento (queries, views, etc)
 ```
+
+### 💡 Salvando Scripts do DBeaver
+
+Por padrão, o DBeaver salva os scripts em `C:\Users\<seu-usuario>\AppData\Roaming\DBeaverData\workspace6\General\Scripts\`.
+Para salvar os scripts no projeto:
+
+1. No DBeaver, após criar seu script, clique em "Save As" (Ctrl + Shift + S)
+2. Navegue até a pasta do projeto `commands/scripts-sql`
+3. Dê um nome descritivo ao seu script (ex: `consulta_funcionarios.sql`)
 
 ## 📝 Observações
 
