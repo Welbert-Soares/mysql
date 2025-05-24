@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 8770
+      MYSQL_DATABASE: Parks_and_Recreation
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 8770
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./sql-scripts:/docker-entrypoint-initdb.d
